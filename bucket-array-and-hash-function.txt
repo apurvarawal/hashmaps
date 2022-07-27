@@ -1,0 +1,18 @@
+Hash function consists of :
+1. Hash code 
+2. Compress function
+
+HASH CODE:
+----------
+
+for INT:
+- it can be simply the number itself.
+
+for string:
+- it is for instance:
+  - "abc" = (ASCII val of 'a' * p^3) + (ASCII val of 'b' * p^2) + (ASCII val of 'c' * p^1), where p is a prime number.
+
+COMPRESS FUNCTION:
+------------------
+
+- val obtained from hash code % size of array
