@@ -1,0 +1,15 @@
+Collision handling is done when more than one value can be stored in the same hashmap block.
+
+It can be done by 2 ways:
+
+1. Open hashing (Separate chaining) :
+    - In this a linked list is stored in a block of hashmap, when an element has to enter in the same block, then they are 
+     placed in that linked list.
+
+2. Closed hashing :
+    - In this method, if the desired block is filled, then we find an alternate block for the data by the formula.
+      hi(a) = hf(a) + f(i) 
+
+      hi : function for finding the block where the data has to be placed
+      hf : hashing function
+      f  : function for finding alternate
